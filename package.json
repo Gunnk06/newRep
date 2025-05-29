@@ -1,0 +1,22 @@
+{
+  "name": "newrep",
+  "version": "1.0.0",
+  "description": "practice project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gunnk06/newRep.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Gunnk06/newRep/issues"
+  },
+  "homepage": "https://github.com/Gunnk06/newRep#readme",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}

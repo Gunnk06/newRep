@@ -1,13 +1,17 @@
 const express = require('express');
-const app = express();
-const port = 3000;
+const path = require('path');
 
-// Define a route
+const app = express();
+
+app.set('view engine', 'ejs');
+
+app.set('views', path.join(__dirname, 'views'));
+
 app.get('/', (req, res) => {
-    res.render('index');
+    res.render('index', { title: 'Home Page' });
 });
 
-// Start the server
-app.listen(port, () => {
-  console.log('Server is running at http://localhost:${port}');
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
+    console.log(`Server running on http://localhost:${PORT}`);
 });
